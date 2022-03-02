@@ -1,0 +1,44 @@
+{
+    "rovers": [
+        {
+            "name": "Sojourner",
+            "landing": 1997,
+            "Speciality": "Being the first wheeled robot to rover the Red Planet",
+            "Weight": "23 lbs",
+            "Top Speed": 0.02,
+            "ToolKit": 2
+        },
+        {
+            "name": "Spirit",
+            "landing": 2004,
+            "Speciality": "Finding evidence of water on Mars",
+            "Weight": "374 lbs",
+            "Top Speed": 0.1,
+            "ToolKit": 5  
+        },
+        {
+            "name": "Opportunity",
+            "landing": 2004,
+            "Speciality": "Finding evidence of water on Mars",
+            "Weight": "374 lbs",
+            "Top Speed": 0.1,
+            "ToolKit": 5  
+        },
+        {
+            "name": "Curiousity",
+            "landing": 2012,
+            "Speciality": "Finding out if Mars once had what all life needs: lasting water and the right chemical ingredients",
+            "Weight": "1982 lbs",
+            "Top Speed": 0.09,
+            "ToolKit": 10  
+        },
+        {
+            "name": "Perseverance",
+            "landing": 2021,
+            "Speciality": "Looking for signs of past or present life and see if humas could one day explore Mars",
+            "Weight": "2260 lbs",
+            "Top Speed": 0.09,
+            "ToolKit": 7  
+        }
+    ]
+}
