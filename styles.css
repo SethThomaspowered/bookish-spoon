@@ -1,3 +1,29 @@
+:root{
+    --box-size: 300px;
+    --color1: black;
+    --color2: blue;
+
+}
+
 h1{
     background-color: blanchedalmond;
+}
+div{
+    width: var(--box-size);
+    height: 100px;
+    background: var(--color1);
+
+}
+
+.row {
+    display: flex;
+}
+.box{
+    width: 100px;
+    height: 100px;
+    position: relative;
+    transition: left 250ms ease-in;
+    display: inline;
+    background: var(--color2);
+    border: 2px solid black;
 }
