@@ -9,6 +9,39 @@ const addElement=(el)=> {for (i in rovers){
 
 }}
 addElement(roverList);
+const boxes = document.querySelectorAll(".box");
+let counter = 0;
+const count = document.querySelector(".counter");
+
+for(let i=0; i <boxes.length; i++){
+    boxes[i].addEventListener('click', function(event){          
+        if(boxes[i].classList.contains("white")){
+            boxes[i].classList.remove("white");
+            if (boxes[i+1]){
+                boxes[i+1].classList.add("white");
+            }
+            if (boxes[i-1]){
+                boxes[i-1].classList.add("white");
+            }
+            if (boxes[i+3]){
+                boxes[i+3].classList.add("white");
+            }
+        }else{
+            boxes[i].classList.add("white");
+            if (boxes[i+1]){
+                boxes[i+1].classList.remove("white");
+            }
+            if (boxes[i-1]){
+                boxes[i-1].classList.remove("white");
+            }
+            if (boxes[i+3]){
+                boxes[i+3].classList.remove("white");
+            }
+        }
+        counter ++;
+        count.innerText(`${counter}`);
+    })
+}
 // const xValues = [1997, 1998, 1999, 2000, 2001, 2002, 2003, 2004, 2005, 2006, 2007, 2008,2009, 2010, 2011, 2012, 2013, 2014, 2015, 2016, 2017, 2018, 2019, 2020, 2021, 2022]
 // const marsRoverChart = new Chart("Rovers on Mars", {
 //     type: "line",

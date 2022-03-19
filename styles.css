@@ -4,9 +4,19 @@
     --color2: blue;
 
 }
-
+html{
+    height: 100%;
+    margin: 0 auto;
+    overflow-x: hidden;
+    width: 100%;
+    -ms-text-size-adjust: 100%;
+    -webkit-text-size-adjust: 100%;
+    background-color: rgb(36, 58, 58);
+    color: #fff;
+}
 h1{
-    background-color: blanchedalmond;
+    text-align: center;
+    font-size: 3rem;
 }
 div{
     width: var(--box-size);
@@ -26,4 +36,7 @@ div{
     display: inline;
     background: var(--color2);
     border: 2px solid black;
+}
+.white {
+    background: white;
 }
