@@ -34,9 +34,12 @@ div{
     position: relative;
     transition: left 250ms ease-in;
     display: inline;
-    background: var(--color2);
-    border: 2px solid black;
+    background: var(--color1);
+    border: 2px solid blue;
 }
 .white {
     background: white;
+}
+.hidden{
+    display: none;
 }
