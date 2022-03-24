@@ -1,3 +1,4 @@
+
 console.log("Hello Mars!");
 const roverList = document.getElementById("rover");
 
@@ -8,7 +9,9 @@ const addElement=(el)=> {for (i in rovers){
     el.appendChild(li);
 
 }}
-addElement(roverList);
+// if(roverlist){
+//     addElement(roverList);}
+
 const boxes = document.querySelectorAll(".box");
 let counter = 0;
 const count = document.querySelector(".counter");
@@ -66,4 +69,25 @@ for(let i=0; i <boxes.length; i++){
 //   boxes.forEach(box => {
 //       setInterval(() => cP(box), 500)
 //   })
-  
+
+async function getText(file) {
+    let myObject = await fetch(file);
+    let myText = await myObject.text();
+    return myObject;   
+  }
+const marsRovers=getText("./rovers.json");
+const marsRoversList= marsRovers[0];
+const arr = []
+for (let i = 0; i <=10; i++){
+    arr.push(i)
+}
+const nums = Array(10)
+.fill(0)
+.map((el, i)=> i+1)
+.map(n => {
+    const div = document.createElement('div')
+    div.className="box"
+    div.id =n;
+    document.body.appendChild(div)
+})
+
